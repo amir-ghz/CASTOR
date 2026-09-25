@@ -1,0 +1,12 @@
+# Install PyTorch first, matched to your CUDA version: https://pytorch.org
+# Developed and tested with Python 3.10, torch 2.7.0+cu128, torch-geometric 2.6.1.
+#
+# torch-sparse and torch-scatter are NOT required: the CASTOR block uses
+# torch.sparse.mm directly, so the version-sensitive PyG extension wheels are
+# not part of the dependency chain.
+torch>=2.1
+torch-geometric>=2.4
+numpy>=1.24
+scipy>=1.10
+scikit-learn>=1.3
+pyyaml>=6.0

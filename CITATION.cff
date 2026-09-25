@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "Self-Tuning Graph Filters via State-Dependent Operator Composition"
+type: software
+authors:
+  - family-names: Ghazizadeh
+    given-names: Amir
+    email: amir.ghz1995@gmail.com
+repository-code: "https://github.com/amir-ghz/CASTOR"
+license: MIT
+version: 1.0.0
+date-released: 2026-09-25
+preferred-citation:
+  type: conference-paper
+  title: "Self-Tuning Graph Filters via State-Dependent Operator Composition"
+  authors:
+    - family-names: Ghazizadeh
+      given-names: Amir
+    - family-names: Alinejad
+      given-names: Mahyar
+    - family-names: Atia
+      given-names: George K.
+    - family-names: Ewetz
+      given-names: Rickard
+    - family-names: Zheng
+      given-names: Hao
+  collection-title: "Advances in Neural Information Processing Systems (NeurIPS)"
+  year: 2026

@@ -1,0 +1,31 @@
+dataset: citeseer
+config:
+  hidden: 64
+  state_dim: null
+  K: 3
+  norm: none
+  router_hidden: null
+  hop_bias_init: zero
+  use_h0: true
+  pre_dropout: 0.5
+  hid_dropout: 0.3
+  use_bfc: false
+  momentum_mode: 'off'
+  momentum_init: 0.0
+  per_hop_beta: false
+  constrained_beta: false
+  lr: 0.01
+  router_lr: null
+  weight_decay: 0.0005
+  optimizer: adam
+  epochs: 1000
+  patience: 200
+  grad_clip: null
+  selection: val_loss
+provenance:
+  reported: 77.7
+  reported_per_split:
+  - 76.6917
+  - 76.8421
+  - 79.5489
+  split_protocol: 10 x 48/32/20 (BernNet protocol)

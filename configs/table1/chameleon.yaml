@@ -1,0 +1,38 @@
+dataset: chameleon
+config:
+  hidden: 64
+  state_dim: null
+  K: 12
+  norm: layer
+  router_hidden: 64
+  hop_bias_init: zero
+  use_h0: true
+  pre_dropout: 0.3
+  hid_dropout: 0.7
+  use_bfc: false
+  momentum_mode: heavyball
+  momentum_init: 0.3
+  per_hop_beta: true
+  constrained_beta: false
+  lr: 0.05
+  router_lr: null
+  weight_decay: 0.0
+  optimizer: adam
+  epochs: 1000
+  patience: 200
+  grad_clip: null
+  selection: val_loss
+provenance:
+  reported: 65.6
+  reported_per_split:
+  - 65.4945
+  - 63.2967
+  - 70.1099
+  - 63.956
+  - 66.8132
+  - 62.8571
+  - 59.1209
+  - 71.6484
+  - 71.2088
+  - 61.5385
+  split_protocol: 10 x 48/32/20 (BernNet protocol)

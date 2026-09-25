@@ -1,0 +1,38 @@
+dataset: amazon_ratings
+config:
+  hidden: 64
+  state_dim: 64
+  K: 5
+  norm: layer
+  router_hidden: 64
+  hop_bias_init: zero
+  use_h0: true
+  pre_dropout: 0.3
+  hid_dropout: 0.3
+  use_bfc: true
+  momentum_mode: heavyball
+  momentum_init: 0.3
+  per_hop_beta: false
+  constrained_beta: true
+  lr: 0.001
+  router_lr: 0.001
+  weight_decay: 0.0
+  optimizer: adamw
+  epochs: 1500
+  patience: 300
+  grad_clip: null
+  selection: val_metric
+provenance:
+  reported: 47.41
+  reported_per_split:
+  - 46.8724
+  - 48.5873
+  - 47.3134
+  - 47.4767
+  - 47.4931
+  - 48.2117
+  - 47.738
+  - 47.0031
+  - 47.3461
+  - 46.1049
+  split_protocol: 50/25/25 (Platonov et al., 2023)

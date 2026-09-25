@@ -1,0 +1,38 @@
+dataset: cornell
+config:
+  hidden: 64
+  state_dim: null
+  K: 10
+  norm: layer
+  router_hidden: null
+  hop_bias_init: default
+  use_h0: true
+  pre_dropout: 0.5
+  hid_dropout: 0.3
+  use_bfc: true
+  momentum_mode: heavyball
+  momentum_init: 0.7
+  per_hop_beta: false
+  constrained_beta: true
+  lr: 0.01
+  router_lr: null
+  weight_decay: 0.0005
+  optimizer: adam
+  epochs: 1000
+  patience: 200
+  grad_clip: 1.0
+  selection: val_loss
+provenance:
+  reported: 81.67
+  reported_per_split:
+  - 77.7778
+  - 83.3333
+  - 77.7778
+  - 77.7778
+  - 91.6667
+  - 83.3333
+  - 69.4444
+  - 80.5556
+  - 88.8889
+  - 86.1111
+  split_protocol: 10 x 48/32/20 (BernNet protocol)

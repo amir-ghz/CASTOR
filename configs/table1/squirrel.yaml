@@ -1,0 +1,38 @@
+dataset: squirrel
+config:
+  hidden: 64
+  state_dim: null
+  K: 12
+  norm: none
+  router_hidden: 64
+  hop_bias_init: zero
+  use_h0: true
+  pre_dropout: 0.3
+  hid_dropout: 0.7
+  use_bfc: true
+  momentum_mode: heavyball
+  momentum_init: -0.4
+  per_hop_beta: true
+  constrained_beta: false
+  lr: 0.01
+  router_lr: null
+  weight_decay: 0.0
+  optimizer: adam
+  epochs: 1000
+  patience: 200
+  grad_clip: 5.0
+  selection: val_loss
+provenance:
+  reported: 49.2
+  reported_per_split:
+  - 52.7377
+  - 51.6811
+  - 45.245
+  - 51.6811
+  - 48.1268
+  - 48.8953
+  - 51.2968
+  - 49.6638
+  - 47.1662
+  - 45.5331
+  split_protocol: 10 x 48/32/20 (BernNet protocol)

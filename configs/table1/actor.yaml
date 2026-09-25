@@ -1,0 +1,31 @@
+dataset: actor
+config:
+  hidden: 64
+  state_dim: 64
+  K: 3
+  norm: layer
+  router_hidden: 64
+  hop_bias_init: preserve
+  use_h0: true
+  pre_dropout: 0.3
+  hid_dropout: 0.7
+  use_bfc: true
+  momentum_mode: 'off'
+  momentum_init: 0.0
+  per_hop_beta: false
+  constrained_beta: true
+  lr: 0.001
+  router_lr: 0.001
+  weight_decay: 0.0
+  optimizer: adamw
+  epochs: 1500
+  patience: 300
+  grad_clip: null
+  selection: val_metric
+provenance:
+  reported: 36.49
+  reported_per_split:
+  - 36.0526
+  - 36.25
+  - 37.1711
+  split_protocol: 10 x 48/32/20 (BernNet protocol)

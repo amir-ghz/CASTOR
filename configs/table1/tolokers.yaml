@@ -1,0 +1,38 @@
+dataset: tolokers
+config:
+  hidden: 64
+  state_dim: 64
+  K: 10
+  norm: layer
+  router_hidden: 64
+  hop_bias_init: zero
+  use_h0: true
+  pre_dropout: 0.3
+  hid_dropout: 0.3
+  use_bfc: true
+  momentum_mode: heavyball
+  momentum_init: 0.3
+  per_hop_beta: false
+  constrained_beta: true
+  lr: 0.001
+  router_lr: 0.001
+  weight_decay: 0.0
+  optimizer: adamw
+  epochs: 1500
+  patience: 300
+  grad_clip: null
+  selection: val_metric
+provenance:
+  reported: 80.08
+  reported_per_split:
+  - 79.4934
+  - 77.2139
+  - 80.8485
+  - 80.3498
+  - 81.953
+  - 79.9133
+  - 80.5688
+  - 78.6535
+  - 81.0108
+  - 80.7556
+  split_protocol: 50/25/25 (Platonov et al., 2023)

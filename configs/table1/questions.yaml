@@ -1,0 +1,38 @@
+dataset: questions
+config:
+  hidden: 64
+  state_dim: 64
+  K: 10
+  norm: layer
+  router_hidden: 64
+  hop_bias_init: zero
+  use_h0: true
+  pre_dropout: 0.3
+  hid_dropout: 0.3
+  use_bfc: true
+  momentum_mode: heavyball
+  momentum_init: 0.3
+  per_hop_beta: false
+  constrained_beta: true
+  lr: 0.001
+  router_lr: 0.001
+  weight_decay: 0.0
+  optimizer: adamw
+  epochs: 1500
+  patience: 300
+  grad_clip: null
+  selection: val_metric
+provenance:
+  reported: 76.13
+  reported_per_split:
+  - 75.5477
+  - 78.1932
+  - 75.7336
+  - 74.647
+  - 77.3615
+  - 76.8319
+  - 74.7426
+  - 76.5947
+  - 76.3909
+  - 75.2388
+  split_protocol: 50/25/25 (Platonov et al., 2023)

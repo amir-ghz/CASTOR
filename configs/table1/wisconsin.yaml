@@ -1,0 +1,38 @@
+dataset: wisconsin
+config:
+  hidden: 64
+  state_dim: null
+  K: 10
+  norm: layer
+  router_hidden: 64
+  hop_bias_init: zero
+  use_h0: true
+  pre_dropout: 0.3
+  hid_dropout: 0.0
+  use_bfc: false
+  momentum_mode: 'off'
+  momentum_init: 0.0
+  per_hop_beta: false
+  constrained_beta: false
+  lr: 0.01
+  router_lr: 0.01
+  weight_decay: 0.0005
+  optimizer: adam
+  epochs: 1000
+  patience: 200
+  grad_clip: null
+  selection: val_loss
+provenance:
+  reported: 86.67
+  reported_per_split:
+  - 80.3922
+  - 94.1177
+  - 86.2745
+  - 96.0784
+  - 82.3529
+  - 84.3137
+  - 86.2745
+  - 82.3529
+  - 90.1961
+  - 84.3137
+  split_protocol: 10 x 48/32/20 (BernNet protocol)

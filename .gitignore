@@ -1,0 +1,23 @@
+# Datasets are downloaded, not vendored: `python scripts/fetch_data.py`
+# restores everything under data/. The split files under splits/ are part of
+# the evaluation protocol and ARE committed.
+data/
+
+# Run outputs
+runs/
+logs/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
